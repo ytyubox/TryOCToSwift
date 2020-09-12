@@ -51,7 +51,20 @@ optional property, array of `Any`, init with Error, method name is not follow Sw
 typedef NSString *SKRocket NS_STRING_ENUM;
 ```
 
+## Rename api for Swift
+`NS_SWIFT_NOTHROW DEPRECATED_ATTRIBUTE`
 
+```objective-c
+
+-(BOOL) saveToURL:(NSURL *) url
+         wasDirty:(nullable BOOL *) wasDirty
+            error: (NSError **)error
+NS_REFINED_FOR_SWIFT;
+```
+👇👇👇👇👇
+```swift
+__save(to:URL, wasDirty:&wasDirty)
+```
 https://sketchk.xyz/2020/07/02/WWDC20-10680-Refine-Objective-C-frameworks-for-Swift/
 
 
