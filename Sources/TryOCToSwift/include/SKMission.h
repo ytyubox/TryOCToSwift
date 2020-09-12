@@ -8,6 +8,8 @@
 #ifndef SKMission_h
 #define SKMission_h
 #include <Foundation/Foundation.h>
+NS_ASSUME_NONNULL_BEGIN
+NSString * _Nonnull const SKRocketSaturnV;
 @interface SKMission: NSObject
 - (instancetype) initWithName:(NSString *) name
                    launchDate:(NSDate *) launchDate
@@ -15,7 +17,7 @@
                       capsule:(NSString *) capsule;
 - (instancetype) initWithContentofURL:(NSURL *)url
                                 error:(NSError **) error;
-@property(copy) NSString *name;
+@property(copy, nullable) NSString *name;
 @property(strong) NSDate *launchDate;
 @property(copy) NSString *rocket;
 @property(copy) NSString *capsule;
@@ -23,4 +25,5 @@
 -(BOOL) saveToURL:(NSURL *) url
             error: (NSError **)error;
 @end
+NS_ASSUME_NONNULL_END
 #endif /* Header_h */

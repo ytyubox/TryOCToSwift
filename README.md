@@ -36,3 +36,9 @@ open class SKMission : NSObject {
 ```
 optional property, array of `Any`, init with Error, method name is not follow Swift convention.
 
+## 1. Describe nullability to control optionals
+
+| improts into Swift as | methods and properties | Any pointer|
+| ----------------------- | ---------------------------- | -------------| 
+|MyClass                     |      nonull                         | _Nonnull    |
+|MyClass?                    |       nullable                    | _Nullable    |
