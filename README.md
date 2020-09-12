@@ -43,3 +43,15 @@ optional property, array of `Any`, init with Error, method name is not follow Sw
 |MyClass                     |      nonull                         | _Nonnull                  |
 |MyClass?                    |     nullable                      | _Nullable                  |
 |MyClass!                    |      null_unspecified         | _Null_unspecified    |
+
+
+
+## `enum`  
+```Objective-C
+typedef NSString *SKRocket NS_STRING_ENUM;
+```
+
+
+https://sketchk.xyz/2020/07/02/WWDC20-10680-Refine-Objective-C-frameworks-for-Swift/
+
+
