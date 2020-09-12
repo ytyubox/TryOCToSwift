@@ -12,3 +12,13 @@ final class TryOCToSwiftTests: XCTestCase {
         ("testExample", testExample),
     ]
 }
+
+extension SKMission {
+    func save(to url: URL) throws -> Bool {
+        var wasDirty:ObjCBool = false
+        try self.__save(to: url, wasDirty: &wasDirty)
+        var error:NSError? = NSError()
+        self.save(to: url, error: &error)
+        return wasDirty.boolValue
+    }
+}

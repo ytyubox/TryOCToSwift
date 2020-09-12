@@ -23,7 +23,15 @@ NSString * _Nonnull const SKRocketSaturnV;
 @property(copy) NSString *capsule;
 @property(copy) NSArray *crews;
 -(BOOL) saveToURL:(NSURL *) url
-            error: (NSError **)error;
+            error: (NSError **)error
+NS_SWIFT_NOTHROW DEPRECATED_ATTRIBUTE
+;
+
+-(BOOL) saveToURL:(NSURL *) url
+         wasDirty:(nullable BOOL *) wasDirty
+            error: (NSError **)error
+NS_REFINED_FOR_SWIFT;
+    
 @end
 NS_ASSUME_NONNULL_END
 #endif /* Header_h */
