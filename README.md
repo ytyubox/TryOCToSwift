@@ -38,7 +38,8 @@ optional property, array of `Any`, init with Error, method name is not follow Sw
 
 ## 1. Describe nullability to control optionals
 
-| improts into Swift as | methods and properties | Any pointer|
-| ----------------------- | ---------------------------- | -------------| 
-|MyClass                     |      nonull                         | _Nonnull    |
-|MyClass?                    |       nullable                    | _Nullable    |
+| improts into Swift as | methods and properties | Any pointer             |
+| ----------------------- | ---------------------------- | -----------------------| 
+|MyClass                     |      nonull                         | _Nonnull                  |
+|MyClass?                    |     nullable                      | _Nullable                  |
+|MyClass!                    |      null_unspecified         | _Null_unspecified    |
